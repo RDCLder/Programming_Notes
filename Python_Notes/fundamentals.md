@@ -27,7 +27,28 @@
     - syntax:  mkdir folder
     - This will create a new folder called “folder” in the current directory
 
-### Getting to Know Python
+### Numbers and Operators
+
+- Numbers can be represented in different ways
+  - Integers:  
+  - Floats:  
+
+- Operators are basic functions that let numbers (and some different data types) interact with each other.
+  - Operators include basic mathematical operators and a few special operators
+    - \\ gives the integer value of the quotient and discard any decimals
+    - % gives the remainder (e.g. 5 % 2 = 1)
+    - ** denotes exponent
+    
+  - Python uses order of operations to compute operations
+  - Multiplying and dividing will always create floats
+    - functions can be used to determine decimal accuracy
+    - int function will take any number data type and return the integer and discard any decimals
+
+- Integers and floats are different data types and can't interact through operators.
+
+- Multiplying
+
+### Print Functions
 
 - print function can use both apostrophes (‘) and quotation marks (“) to denote strings
   - If you use both (‘) and (“) in a print function such as in the following example:
