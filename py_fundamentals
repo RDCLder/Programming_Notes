@@ -1,0 +1,31 @@
+
+WINDOWS Command Line Fundamentals
+
+•	The PowerShell is the command prompt for windows OS
+o	An OS is structured like a tree in which a root directory can then branch off into subdirectories (e.g. folders, files, etc.)
+	Root directory is C:
+	Levels of the hierarchy are separated by \
+	Home directory is designated by ~ and is usually C:\Users\Username
+
+o	The command prompt has greater functionality than a GUI like Windows Explorer
+	e.g.  Instead of manually dragging a file from directory to directory, PowerShell can perform that function with a line of code
+
+•	PowerShell has several basic functions that can be used to manipulate files
+o	Basic directory functions
+	cd	addresses the current directory
+	..	goes back one level to parent directory (e.g. cd ..)
+	ls	lists all the contents of current directory
+	wpd	lists the exact path from root directory to current directory
+	~	accesses the home directory
+
+o	Other functions
+	clear	clears current PowerShell text
+
+•	Creating Directories
+o	mkdir command can make new directories
+	syntax:  mkdir folder
+	This will create a new folder called “folder” in the current directory
+
+•	Creating Files
+o	
+
