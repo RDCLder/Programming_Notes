@@ -27,6 +27,8 @@
     - syntax:  mkdir folder
     - This will create a new folder called “folder” in the current directory
 
+---
+
 ### Numbers and Operators
 
 - Numbers can be represented by different data types
@@ -47,6 +49,8 @@
 
 - Not all data types can interact with each other
   - Integers and floats are different data types and can't interact through operators.
+
+---
 
 ### Strings and Variables
 
@@ -88,6 +92,8 @@
   - The start of a variable must be an underscore or a letter
   - The rest of the variable can include any character
   - Variables are case-sensitive
+
+---
 
 ### Relevant Functions and Tips
 
