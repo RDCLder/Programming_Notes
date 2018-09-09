@@ -3,7 +3,7 @@
 ### Lists
 
 - Lists are an arrayed data type that includes non-arrayed elements inside
-  - Lists are enclosed with []
+  - Lists are enclosed with regular brackets **[ + ]**
   - List elements can include any non-arrayed element such as numbers and strings
 
 - Lists are mutable
