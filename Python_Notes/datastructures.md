@@ -2,13 +2,26 @@
 
 ### Lists
 
-- Lists are an arrayed data type that includes non-arrayed elements inside
-  - Lists are enclosed with regular brackets **[ + ]**
-  - List elements can include any non-arrayed element such as numbers and strings
+- Defintion:  An arrayed data structure that can store elements
 
-- Lists are mutable
-  - Mutable means non-static and changeable
-  - Lists can be appended
+- Syntax:
+
+```python
+  list = []
+  ```
+
+- List Properties
+  - Lists are mutable
+    - Being mutable means non-static and changeable
+    - Lists can be appended in multiple ways
+    
+  - Lists can store the following elements:
+    - Non-arrayed elements (e.g. numbers and strings)
+    - Lists
+
+- List Manipulations
+
+- Nested Lists
 
 ---
 
