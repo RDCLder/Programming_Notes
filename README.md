@@ -1,9 +1,7 @@
 # Programming Notes
 
 ### Python
-* [Fundamentals](./Python_Notes/fundamentals.md)
-  - stuff
-    - more stuff
+- [Fundamentals](./Python_Notes/fundamentals.md)
 - Program Flow Control
 - Data Structures
 - Functions and Modules
