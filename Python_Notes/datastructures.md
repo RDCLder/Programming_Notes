@@ -7,7 +7,7 @@
 - Syntax:
 
 ```python
-  list = []
+  list = [item1, item2, item3]
   ```
 
 - List Properties
