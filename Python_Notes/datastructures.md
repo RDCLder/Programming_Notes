@@ -14,10 +14,7 @@
   - Lists are mutable
     - Being mutable means non-static and changeable
     - Lists can be appended in multiple ways
-    
-  - Lists can store the following elements:
-    - Non-arrayed elements (e.g. numbers and strings)
-    - Lists
+  - Lists can store different elements, including other lists
 
 - List Manipulations
 
