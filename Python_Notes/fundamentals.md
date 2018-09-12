@@ -107,5 +107,8 @@
   
 - **print()** will output the enclosed element(s)
   - The enclosed elements can be any data type and can undergo any operation or manipulation
-  
+ 
+- **.join()** will join the preceding string with the proceeding element with the enclosed element
+  - Used for concatenating strings in a list
+
 - Highlighting code and pressing **Ctrl + /** will convert code to comment and vice versa
