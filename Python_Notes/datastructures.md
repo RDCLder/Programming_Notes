@@ -31,7 +31,8 @@
     list = [1, 2, 3, 4, 5]
     list[-1:1:-1]
     # This will print 5, 4, 3, 2
-    list[-4:] This will print 2, 3, 4, 5
+    list[-4:]
+    # This will print 2, 3, 4, 5
     ```
   
   - **Hashing**:  stuff
