@@ -16,9 +16,13 @@
     - Lists can be appended in multiple ways
   - Lists can store different elements, including other lists
 
-- List Manipulations
+- List Methods
+  - 
 
 - Nested Lists
+
+- List Functions
+  - 
 
 ---
 
