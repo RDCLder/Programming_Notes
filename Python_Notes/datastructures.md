@@ -18,7 +18,7 @@
 
 - Nested Lists
 
-# Lists Methods & Functions
+### Lists Methods & Functions
 
 - **.append()** is a method that adds a single enclosed element to the preceding element
 
