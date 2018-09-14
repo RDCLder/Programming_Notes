@@ -38,11 +38,6 @@
     list[-4:]
     # This will print 2, 3, 4, 5
     ```
-  
-  - **Hashing**:  stuff
-    - more stuff
-
-- Nested Lists
 
 ### Lists Methods
 
