@@ -58,7 +58,11 @@
     - Using a negative number for the position will cause the insertion to go backwards from the end of the list
 
 - List Removal
-  - **.clear()** is a method that will erase all the stored contents of the preceding element
+  - clear 
+    - A method that will erase all the stored contents of the preceding element
+    - ```pyhon
+      .clear()
+      ```
 
   - **.pop()** is a method that removes an element at a specified position and returns it
     - If no position is specified, the last element will be removed
