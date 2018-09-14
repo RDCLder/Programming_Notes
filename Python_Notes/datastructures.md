@@ -88,7 +88,17 @@
     # This will yield the following string: 'Coding is fun'
     ```
     - The join method is commonly used to convert lists to strings.
-
+  
+  - **swap** is a way of mixing the elements of a list
+    ```python
+    list = ['First', 'Second']
+    list[0], list[1] = list[1], list[0]
+    
+    # The position of the strings will be reversed
+    # list = ['Second', 'First']
+    ```
+    - For the above example, the position of the strings will be reversed
+    
 ---
 
 ### Dictionaries
