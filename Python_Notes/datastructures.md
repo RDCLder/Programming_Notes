@@ -1,6 +1,4 @@
-# Data Structures
-
-### Lists
+# Lists
 
 - Defintion:  An arrayed data structure that can store elements
 
@@ -49,7 +47,9 @@
     ```
     - Useful for shuffling and sorting algorithms
 
-### Lists Methods
+---
+
+# Lists Methods
 
 - List Addition
   - **.append()** is a method that adds a single enclosed element to the preceding element
@@ -98,11 +98,3 @@
     # This will yield the following string: 'Coding is fun'
     ```
     - The join method is commonly used to convert lists to strings.
-    
----
-
-### Dictionaries
-
----
-
-### Tuples and Sets
