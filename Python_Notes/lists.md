@@ -16,28 +16,28 @@
     - Lists can be appended in multiple ways
   - Lists can store different elements, including other lists
 
-- List Manipulations
-  - **Slicing**:  Making a new list from "slices" of existing lists
-    - Syntax:  list[start:stop:step]
-    ```python
-    list = [1, 2, 3, 4, 5]
+### List Manipulations
+
+- **Slicing**:  Making a new list from "slices" of existing lists
+  - Syntax:  list[start:stop:step]
+  ```python
+  list = [1, 2, 3, 4, 5]
     
-    list[0:]
-    # This will print 1, 2, 3, 4, 5
+  list[0:]
+  # This will print 1, 2, 3, 4, 5
     
-    list[2:4]
-    # This will print 3, 4, 5
-    ```
-    - The start, stop, and step can be negative
-    ```python
-    list = [1, 2, 3, 4, 5]
+  list[2:4]
+  # This will print 3, 4, 5
+  ```
+  - The start, stop, and step can be negative
+  ```python
+  list = [1, 2, 3, 4, 5]
     
-    list[-1:1:-1]
-    # This will print 5, 4, 3, 2
-    
-    list[-4:]
-    # This will print 2, 3, 4, 5
-    ```
+  list[-1:1:-1]
+  # This will print 5, 4, 3, 2
+  list[-4:]
+  # This will print 2, 3, 4, 5
+  ```
     
 - **swap** is a way of mixing the elements of a list
     ```python
