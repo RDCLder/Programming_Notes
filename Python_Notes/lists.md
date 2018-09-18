@@ -15,6 +15,7 @@
     - Being mutable means non-static and changeable
     - Lists can be appended in multiple ways
   - Lists can store different elements, including other lists
+---
 
 ### List Manipulations
 
