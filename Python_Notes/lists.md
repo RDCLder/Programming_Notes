@@ -17,7 +17,7 @@
   - Lists can store different elements, including other lists
 
 - Nested Lists
-  - 
+  - stuff
 
 ---
 
@@ -85,7 +85,7 @@
   
 ---
 
-### Methods
+### List Methods
 
 - List Addition
   - **.append()** is a method that adds a single enclosed element to the preceding element
