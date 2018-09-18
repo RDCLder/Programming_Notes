@@ -51,10 +51,7 @@
     - Useful for shuffling and sorting algorithms
 
 - List Comprehension
-  - Syntax
-  ```python
-  [action for item in list]
-  ```
+  - Syntax: [action for item in list]
     - For each item in the list, a certain action is performed to the item.
   - e.g.
   ```python
