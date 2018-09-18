@@ -17,7 +17,8 @@
   - Lists can store different elements, including other lists
 
 - Nested Lists
-  - stuff
+  - Lists inside of other lists
+  - List comprehension can be performed inside lists
 
 ---
 
