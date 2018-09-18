@@ -49,9 +49,30 @@
     ```
     - Useful for shuffling and sorting algorithms
 
+- List Comprehension
+  - Syntax
+  ```python
+  [action for item in list]
+  ```
+    - For each item in the list, a certain action is performed to the item.
+  - e.g.
+  ```python
+  numbers = [1, 2, 3]
+  
+  doubled = [num * 2 for num in numbers]
+  ```
+    - This will generate a new list containing [2, 4, 6].
+  
+  ```python
+  name = 'bob'
+  
+  upperName = [char.upper() for char in name]
+  ```
+    - This will produce a new list containing the uppercase version of each letter: ['B', 'O', 'B']
+  
 ---
 
-### List Methods
+### Methods
 
 - List Addition
   - **.append()** is a method that adds a single enclosed element to the preceding element
