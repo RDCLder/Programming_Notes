@@ -2,12 +2,12 @@
 
 ### General
 
-- Defintion:  An arrayed data structure that can store elements
-
-- Syntax:
-
-```python
-  list = [item1, item2, item3]
+- List Basics
+  - Defintion:  An arrayed data structure that can store elements
+  - Syntax:  [element1, element2, element3]
+  - e.g.
+  ```python
+  list = ['One', 2, [3, 4, 5]]
   ```
 
 - List Properties
