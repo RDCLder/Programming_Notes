@@ -15,6 +15,10 @@
     - Being mutable means non-static and changeable
     - Lists can be appended in multiple ways
   - Lists can store different elements, including other lists
+
+- Nested Lists
+  - 
+
 ---
 
 ### List Manipulations
@@ -50,9 +54,9 @@
     ```
     - Useful for shuffling and sorting algorithms
 
-- List Comprehension
-  - Syntax: [action for item in list]
-    - For each item in the list, a certain action is performed to the item.
+- List Comprehension:  A method for generating a new list 
+  - Syntax: [item + action for item in list]
+    - For each item in the list, a certain action is performed to the item.  All items are then stored in a new list.
   - e.g.
   ```python
   numbers = [1, 2, 3]
@@ -67,6 +71,17 @@
   upperName = [char.upper() for char in name]
   ```
     - This will produce a new list containing the uppercase version of each letter: ['B', 'O', 'B']
+  
+  - Lists comprehension can include conditional logic
+    - Syntax:  [item + action for item in list if condition]
+      ```python
+      numbers = [1, 2, 3, 4, 5, 6]
+      evens = [num for num in numbers if num % 2 == 0] # [2, 4, 6]
+      odds = [num for num in numbers if num % 2 != 0] # [1, 3, 5]
+      
+      double_half = [num * 2 if num % 2 == 0 else num / 2 for num in numbers]
+      # [0.5, 4, 1.5, 8, 2.5, 12]
+      ```
   
 ---
 
