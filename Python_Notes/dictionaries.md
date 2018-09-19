@@ -57,3 +57,25 @@
     
     dict_items([('name', 'Colt'), ('owns_dog', True), ('num_courses', 4) ...])
     ```
+
+- Testing for Specific Elements
+  - Presence of a key can be tested with a normal in statement
+  - Presence of a value must be tested using the **.values()** method
+  ```python
+  'Colt' in instructor.values() # True
+  ```
+
+---
+
+### Dictionary Methods
+
+- **.clear()** is a method that deletes all the contents of the preceding dictionary
+
+- **.copy()** is a method that copies all the contents of the contained dictionary into the preceding dictionary
+
+- **.fromkeys()** is a method that creates key-valued pairs from adjacent elements separated by commas and stores them in the preceding, empty dictionary
+```python
+{}.fromkeys('a', 'b') # {'a': 'b'}
+{}.fromkeys(['email'], 'unknown') # {'email': 'unknown'}
+{}.fromkeys('a', [1, 2, 3, 4, 5]) # {'a': [1, 2, 3, 4, 5]}
+```
