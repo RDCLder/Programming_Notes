@@ -73,9 +73,24 @@
 
 - **.copy()** is a method that copies all the contents of the contained dictionary into the preceding dictionary
 
-- **.fromkeys()** is a method that creates key-valued pairs from adjacent elements separated by commas and stores them in the preceding, empty dictionary
-```python
-{}.fromkeys('a', 'b') # {'a': 'b'}
-{}.fromkeys(['email'], 'unknown') # {'email': 'unknown'}
-{}.fromkeys('a', [1, 2, 3, 4, 5]) # {'a': [1, 2, 3, 4, 5]}
-```
+- **.fromkeys()** is a method that creates key-valued pairs from elements separated by commas and stores them in the preceding, empty dictionary
+  - syntax:  {}.fromkeys(iterable_element, value)
+    - The key must be an iterable element such as a string or a list
+    - The value can be anything
+  - e.g.
+  ```python
+  {}.fromkeys('a', 'b') # {'a': 'b'}
+  {}.fromkeys(['email'], 'unknown') # {'email': 'unknown'}
+  {}.fromkeys('a', [1, 2, 3, 4, 5]) # {'a': [1, 2, 3, 4, 5]}
+  {}.fromkeys('string', 1) # {'s': 1, 't': 1, 'r': 1, 'i': 1, 'n': 1, 'g': 1}
+  ```
+    - In this example, the last statement shows the key string being iterated over each letter.
+
+- **.get()** is a method that retrieves a key in an object and returns None if the key does not exist
+  - e.g.
+  ```python
+  instructor.get('Cool')
+  # This returns None because 'Cool' key doesn't exist.
+  ```
+
+- **.pop()** is a method that 
