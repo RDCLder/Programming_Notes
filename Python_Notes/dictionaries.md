@@ -71,7 +71,7 @@
 
 - **.clear()** is a method that deletes all the contents of the preceding dictionary
 
-- **.copy()** is a method that copies all the contents of the contained dictionary into the preceding dictionary
+- **.copy()** is a method that copies all the contents of the preceding dictionary.  Must be stored to a variable.
 
 - **.fromkeys()** is a method that creates key-valued pairs from elements separated by commas and stores them in the preceding, empty dictionary
   - syntax:  {}.fromkeys(iterable_element, value)
@@ -93,4 +93,49 @@
   # This returns None because 'Cool' key doesn't exist.
   ```
 
-- **.pop()** is a method that 
+- **.pop()** is a method that takes a single argument corresponding to a key and removes the key-value pair from the dictionary.  The key-value pair is returned.
+  - e.g.
+  ```python
+  d = dict(a = 1, b = 2, c = 3)
+  d.pop() # This will return an error because an argument is required.
+  d.pop('a') # Removes and returns 1
+  d # {'c': 3, 'b': 2}
+  d.pop('e') # This will return cause an error as e is not a key
+  ```
+- **.popitem()** is a method that removes a random key-value in a dictionary and returns it.
+  - e.g.
+  ```python
+  d = dict(a = 1, b = 2, c = 3)
+  d.popitem(a) # This willreturn an error as this method takes no arguments
+  d.popitem() # This will remove a random item and reutrn it (e.g. a = 1)
+  ```
+
+- **.update()** is a method that updates keys and values in a dictionary with another set of key-value pairs.
+  - Only useful for appending dictionaries
+  
+### Dictionary Comprehension
+
+- Dictionary comprehension is a way to generate dictionaries with specified parameters
+  - Syntax:  {_:_for_in_}
+    - Iterates over keys by default
+    - Can iterate over keys and values with **.items()** method
+  - e.g.
+  ```python
+  numbers = dict(first = 1, second = 2, third = 3)
+  squared_numbers = {key: value ** 2 for key, value in numbers.items()}
+  print(squared_numbers) # {'first': 1, 'second': 4, 'third': 9}
+  ```
+  ```python
+  str1 = "ABC"
+  str2 = "123"
+  combo = {str1[i]: str2[i] for i in range(0, len(str1))}
+  print(combo) # {'A': 1, 'B': 2, 'C': 3}
+  ```
+
+- Dictionary comprehension with conditional logic
+  - e.g.
+  ```python
+  num_list = [1, 2, 3, 4]
+  {num: ('even' if num % 2 == 0 else 'odd') for num in num_list}
+  # {1: 'odd', 2: 'even', 3: 'odd', 4: 'even'}
+  ```
