@@ -2,11 +2,11 @@
 
 ### General
 
-Function Basics
-  - Definition:  A process for executing a task
+- Definition:  A process for executing a task
     - Accepts an input and returns an output
     - Useful for executing similar tasks repeatedly and organizing code
 
+- Function Structure
   - Syntax:
   ```python
   def functionName(input):
@@ -48,7 +48,7 @@ Function Basics
       exp(power = 5, num = 2)
       # Takes 2 to the power of 5 and returns 32
       ```
-  
+
 - Scope:  The level at which something exists
   - The scope of an object exists at the outermost shell it is contained within.
     - For functions, their scope is the script that contains them, which is the outermost scope.
