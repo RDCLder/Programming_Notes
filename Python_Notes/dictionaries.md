@@ -112,7 +112,9 @@
 
 - **.update()** is a method that updates keys and values in a dictionary with another set of key-value pairs.
   - Only useful for appending dictionaries
-  
+
+---
+
 ### Dictionary Comprehension
 
 - Dictionary comprehension is a way to generate dictionaries with specified parameters
@@ -131,8 +133,6 @@
   combo = {str1[i]: str2[i] for i in range(0, len(str1))}
   print(combo) # {'A': 1, 'B': 2, 'C': 3}
   ```
-
----
 
 - Dictionary comprehension with conditional logic
   - e.g.
