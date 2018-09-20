@@ -49,5 +49,17 @@ Function Basics
       # Takes 2 to the power of 5 and returns 32
       ```
   
-- Scope
-  
+- Scope:  The level at which something exists
+  - The scope of an object exists at the outermost shell it is contained within.
+    - For functions, their scope is the script that contains them, which is the outermost scope.
+  - For functions, anything contained within a function only has a scope within the function
+    - e.g.
+    ```python
+    def exp(num, power = 2):
+        output = num ** power
+        return output
+    
+    print(output) # This will return an error.
+    ```
+    - In the above example, the variable output only exist within the function.  It cannot be called directly outside the function.
+    - If a variable with the same is created outside the function, it will not affect the variable with the same name inside the function.
