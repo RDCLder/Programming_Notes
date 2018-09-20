@@ -15,7 +15,9 @@
   
   # Tuple contents cannot be re-assigned.  Tuple variables, however, can be.
   ```
-  
+
+- **tuple()** is a function that takes an arrayed argument and returns a tuple of the argument
+
 - Tuple Usage
   - Tuples are faster than lists because tuples support less built-in functions/methods
   - Tuples can be safer for data that will never be changed.
