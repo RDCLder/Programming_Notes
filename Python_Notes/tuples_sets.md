@@ -90,7 +90,7 @@
   
 - **.clear()** is a method that removes all the contents of the preceding set
 
-- **Set Math** contains operators that can be used to interact with sets.
+- Set Math contains operators that can be used to interact with sets.
   - **|**:  Union operator.  Joins two sets.
     ```python
     s = {1, 2, 3} | {4, 5, 6}
