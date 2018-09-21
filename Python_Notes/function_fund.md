@@ -51,7 +51,19 @@
 
 - Scope:  The level at which something exists
   - The scope of an object exists at the outermost shell it is contained within.
-    - For functions, their scope is the script that contains them, which is the outermost scope.
+  - Scope Levels
+    - **global:**  The outermost scope
+    - **nonlocal:**  
+    - For any object that is defined at a global or nonlocal scope, the scope must precede the object to call the object.
+    - e.g.
+    ```python
+    numbers = [1, 2, 3, 4, 5]
+    
+    def exp(num, power):
+        num = global numbers # numbers exists outside the function so its scope must be specified
+        output = num ** power
+        return output
+    ```
   - For functions, anything contained within a function only has a scope within the function
     - e.g.
     ```python
