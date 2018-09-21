@@ -91,3 +91,28 @@
     exp.__doc__ # This will print the documentation line.
     ```
     - Can be used on native python functions to explain them.
+
+### Star Operators
+
+- **star arguments**:  A special operator used to pass functions
+  - Gathers all remaining arguments as a tuple
+    - There is no set amount of arguments required
+    - Useful for functions where the number of arguments can be variable
+  - Syntax:  * + parameter (usually named args)
+    - The star operator is only applied for all proceeding arguments.  Any parameters/arguments preceding it are unaffected.
+    - This allows a function to have both a number of required arguments and a variable number of arguments.
+  - e.g.
+    ```python
+    def sum_all_nums(num1, num2, num3):
+        return num1 + num2 + num3
+    
+    # If the user wants to input more than 3 arguments, this function would not work.
+    # Using the star operator allows us to define a function that takes a variable number of arguments.
+    
+    def sum_all_nums(*args):
+        total = 0
+        for num in args:
+            total += num
+        return num
+    ```
+    
