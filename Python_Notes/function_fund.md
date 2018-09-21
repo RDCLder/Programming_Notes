@@ -53,7 +53,7 @@
   - The scope of an object exists at the outermost shell it is contained within.
   - Scope Levels
     - **global:**  The outermost scope
-    - **nonlocal:**  
+    - **nonlocal:**  A scope outside the local scope but not in the outermost scope 
     - For any object that is defined at a global or nonlocal scope, the scope must precede the object to call the object.
     - e.g.
     ```python
@@ -75,3 +75,19 @@
     ```
     - In the above example, the variable output only exist within the function.  It cannot be called directly outside the function.
     - If a variable with the same is created outside the function, it will not affect the variable with the same name inside the function.
+
+- Documenting Functions
+    - Documentation is a way of describing a function.  A function's documentation can be called.
+    - Syntax: """Explanation"""
+        - The documentation must be on the first line inside the function.
+    - Calling a function followed by .__doc__ (double underscores) will print the documentation line
+    - e.g.
+    ```python
+    def exp(num, power = 2):
+        """A function that calculates the number raised to the power."""
+        output = num ** power
+        return output
+    
+    exp.__doc__ # This will print the documentation line.
+    ```
+    - Can be used on native python functions to explain them.
