@@ -120,6 +120,7 @@
 - **Star Keyword Arguments (**kwargs)**
   - Definition:  A special operator used to pass functions by gathering all proceeding arguments as a dictionary.
   - Syntax:  def function(**parameter):
+    - The user input must specify a key word argument by setting the key equal to a value.
     - The keyword parameter will be converted to a string.  It must be called as a string in the function.
   - e.g.
   ```python
@@ -129,3 +130,50 @@
   
   fav_colors(Colt = 'purple', Ruby = 'red', Ethel = 'teal')
   ```
+
+- Parameter Ordering
+  - Parameters in a function definition must be ordered as follows:
+    - Parameters
+    - *args
+    - Default Parameters
+    - **kwargs
+  - e.g.
+  ```python
+  def display_info(a, b, *args, instructor = 'Colt', **kwargs):
+    return [a, b, args, instructor, kwargs]
+  ```
+
+- Tuple Unpacking
+  - * operators can be passed in a function argument to unpack list and tuple arguments.
+    - The star operator must precede the list or tuple argument.
+  - e.g.
+  ```python
+  def total_sum(*args):
+    total = 0
+    for num in args:
+      total += num
+    return total
+  
+  nums = [1, 2, 3, 4, 5]
+  # Because nums is a list, it cannot be added to the integer 0 from total.
+  # The list must be iterated over or unpacked.
+  
+  total_sums(*nums)
+  # Returns 15
+  ```
+  
+- Dictionary Unpacking
+  - ** operators can be passed in a function argument to unpack dictionary arguments (e.g. key = value)
+  - e.g.
+  ```python
+  def display_name(first, second):
+    return f'{first} says hello to {second}'
+  
+  names = {'first': 'Colt', 'second': 'Rusty'}
+  # Since names is a dictionary, the dictionary must either be converted to an iterable form or unpacked.
+  
+  display_name(**names)
+  # Returns 'Colt says hello to Rusty'
+  ```
+
+  
