@@ -92,6 +92,8 @@
     ```
     - Can be used on native python functions to explain them.
 
+---
+
 ### Star Operators
 
 - **Star Arguments (*args)**
