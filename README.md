@@ -9,7 +9,7 @@
   - [Tuples and Sets](./Python_Notes/tuples_sets.md)
 - Functions and Modules
   - [Function Fundamentals](./Python_Notes/function_fund.md)
-  - [Built-In Functions](./Python_Notes/builtin_functions.md
+  - [Built-In Functions](./Python_Notes/builtin_functions.md)
 - [Debugging and Error Handling](./Python_Notes/debug.md)
 - [Objected-Oriented Programming](./Python_Notes/oop.md)
 - [Databases](./Python_Notes/database.md)
