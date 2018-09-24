@@ -119,6 +119,53 @@
 - **round()**:  Returns a number rounded to the nearest ndigits precision after the decimal point.
   - If ndigits is omitted or equals None, the function returns the nearest integer to the input.
 
+- **zip()**:  A function that returns a tuple iterator which aggregates elements from each iterable argument.
+	- The tuple iterator creates a tuple for each *i*th item from each iterable argument.
+		- The iterator goes up to the shortest *i*th item of all arguments.
+		- The rest of the items of each argument after the shortest *i*th item are discarded.
+	- The tuple iterator returned must be converted to an arrayed object (e.g. list, dictionary, etc.) to be called.
+	- Star operators can be used to unpack arguments.
+	- Basic examples
+	```python
+	first_zip = zip([1, 2, 3], [4, 5, 6]) 
+	# This returns a tuple iterator that must be converted to an arrayed object.
+	list(first_zip) # [(1, 4), (2, 5), (3, 6)]
+	dict(first_zip) # {1: 4, 2: 5, 3: 6}
+	
+	second_zip = zip([1, 2, 3, 4], [5, 6, 7])
+	# Because the shortest iterable has 3 items, only 3 tuples are created.
+	list(second_zip) # [(1, 5), (2, 6), (3, 7)]
+	# The last item of the first list, 4, is discarded.
+	
+	# Unpacking using *
+	five_by_two = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
+	list(zip(*five_by_two))
+	# At this point, using a star unpacks the five_by_two argument
+	[(0, 1, 2, 3, 4), (1, 2, 3, 4, 5)]
+	```
+
+	- Advanced Examples
+	```python
+	midterms = [80, 91, 78]
+	finals = [98, 89, 53]
+	students = ['dan', 'ang', 'kate']
+	# Objective is to only show highest scores for each student.
+	
+	# Dictionary Comprehension
+	grades = {pair[0]: max(t[1], t[2]) for t in zip(students, midterms, finals)}
+	
+	scores = dict(
+		zip(
+			students,
+			map(
+				lambda pair: max(pair),
+				zip(midterms, finals)
+			)
+		)
+	)
+		
+	```
+	
 ---
 
 ### Miscellaneous
