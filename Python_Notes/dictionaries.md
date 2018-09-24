@@ -86,7 +86,7 @@
   ```
     - In this example, the last statement shows the key string being iterated over each letter.
 
-- **.get()** is a method that retrieves a key in an object and returns None if the key does not exist
+- **.get()** is a method that calls the specified key in a dictionary and returns the corresponding value or None if the key does not exist.
   - e.g.
   ```python
   instructor.get('Cool')
