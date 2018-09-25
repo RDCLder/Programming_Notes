@@ -54,9 +54,37 @@
   'awesome'.foo # The string does not have a 'foo' attribute.
   ```
 
+- Creating Custom Errors
+  - Custom errors can be created using the **raise** keyword.
+  - Syntax:  raise ErrorType('Error message')
+    - ErrorType can be anything (see above error types)
+  - e.g.
+  ```python
+  def colorize(text, color)
+    if type(text) is not str:
+      raise TypeError('text must be instance of str')
+    return f'Printed {text} in {color}
+  
+  colorize('Hello', 'red') # 'Hello in red'
+  colorize(24, 'red') # Returns error because text is a number
+  ```
+
 ---
 
 ### Debugging & Error Handling
 
-- Creating Custom Errors
-  - 
+- Error Handling
+  - In Python, it is strongly encouraged to use **try/except** blocks to catch potential exceptions if possible.
+  - **try** is a command that will attempt to run the encompassed statement.
+    - If the statement cannot be run, the next line is run.
+  - **except** is a coammand that will run the encompassed statement if the try statement does not work.
+  - e.g.
+  ```python
+  try:
+    unnamed_function = input()
+  except:
+    if unnamed_function == False:
+      print('try instance undefined')
+  ```
+
+- 
