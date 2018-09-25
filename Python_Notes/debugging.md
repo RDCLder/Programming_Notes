@@ -71,20 +71,19 @@
 
 ---
 
-### Debugging & Error Handling
+### Error Handling
 
-- Error Handling
-  - In Python, it is strongly encouraged to use **try/except** blocks to catch potential exceptions if possible.
+- In Python, it is strongly encouraged to use **try/except** blocks to catch potential exceptions if possible.
   - **try** is a command that will attempt to run the encompassed statement.
     - If the statement cannot be run, the next line is run.
   - **except** is a coammand that will run the encompassed statement if the try statement does not work.
-  - e.g.
-  ```python
-  try:
-    unnamed_function = input()
-  except:
-    if unnamed_function == False:
-      print('try instance undefined')
-  ```
-
-- 
+    - e.g.
+    ```python
+    try:
+      unnamed_function = input()
+    except:
+      if unnamed_function == False:
+        print('try instance undefined')
+    ```
+  - **else** is a command that will run the encompassed statement if the try statement does not work
+  
