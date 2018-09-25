@@ -10,8 +10,8 @@
 - Functions and Modules
   - [Function Fundamentals](./Python_Notes/function_fund.md)
   - [Built-In Functions](./Python_Notes/builtin_functions.md)
-- Errors
-  - [Error Handling and Debugging](./Python_Notes/errors.md)
+  - [Modules](./Python_Notes/modules.md)
+- [Error Handling and Debugging](./Python_Notes/errors.md)
 - [Objected-Oriented Programming](./Python_Notes/oop.md)
 - [Databases](./Python_Notes/database.md)
 - [Web Scrapping](./Python_Notes/webscrap.md)
