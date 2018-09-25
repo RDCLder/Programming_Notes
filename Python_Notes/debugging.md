@@ -74,9 +74,9 @@
 ### Error Handling
 
 - In Python, it is strongly encouraged to use **try/except** blocks to catch potential exceptions if possible.
-  - **try** is a command that will attempt to run the encompassed statement.
+  - **try** is a command that will attempt to run the nested statement.
     - If the statement cannot be run, the next line is run.
-  - **except** is a coammand that will run the encompassed statement if the try statement does not work.
+  - **except** is a coammand that will run the nested statement if the try statement does not work.
     - e.g.
     ```python
     try:
@@ -85,5 +85,10 @@
       if unnamed_function == False:
         print('try instance undefined')
     ```
-  - **else** is a command that will run the encompassed statement if the try statement does not work
-  
+  - **else** is a command that will run the nested statement if the try statement does work.
+  - **finally** is a command that will always run the nested statement.
+    - **finally** statements are put at the end of the error handling loop.
+  - Run Order:
+    - **try**
+    - **except** if there's a problem OR **else** if there is no problem
+    - **finally*
