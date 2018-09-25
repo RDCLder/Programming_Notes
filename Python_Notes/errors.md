@@ -1,4 +1,4 @@
-# Errors and Debugging
+# Errors
 
 ### Objectives
 
@@ -90,14 +90,39 @@
   def divide(a, b):
     try:
       result = a / b
-    except ZeroDivisionError as err:
-      print(err)
-      print('Cannot divide by zero')
-    except TypeError as err:
-      print(err)
-      print('Must use numbers')
+    except ZeroDivisionError:
+      return 'Cannot divide by zero.'
+    except TypeError:
+      return 'Must use numbers.'
     else:
       return f'{a} divided by {b} is {result}.'
   ```
 
-Debugging 
+- Debugging with pdb
+  - **pdb**:  A command that will pause the execution of code and open debugging mode.
+    - Breakpoints can be set by inserting the following lines:
+    ```python
+    import pdb
+    pdb.set_trace()
+    ```
+      - **pdb** must be imported.  **pdb** breakpoints can be set anywhere.
+    - e.g.
+    ```python
+    import pdb
+    first = 'First'
+    second = 'Second'
+    pdb.set_trace()
+    result = first + second
+    third = 'Third'
+    result += third
+    print(result)
+
+    # This will open debugging mode right before line 117.
+    ```
+  - Debugging Mode:  A mode for inspecting code line by line with associated commands.
+    - l:  Shows the current line and the surrounding lines
+    - n:  Command for running the next line.
+    - p:  Command for print.  Must be followed by a printable object.
+    - c:  Command for executing the rest of the lines to finish debugging.
+    - q:  Command for exiting debugging mode.
+
