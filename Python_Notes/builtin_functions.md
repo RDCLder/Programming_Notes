@@ -1,6 +1,6 @@
 # Built-In Functions
 
-### Common Built-In Functions
+## Common Built-In Functions
 
 - **lambda**:  A lambda is a function without a name definition.
   - Syntax:  lambda value: value + action
@@ -165,7 +165,3 @@
 	)
 		
 	```
-	
----
-
-### Miscellaneous
