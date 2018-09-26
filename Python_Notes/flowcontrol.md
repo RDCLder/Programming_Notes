@@ -1,6 +1,6 @@
 # Flow Control
 
-### Conditional Logic
+## Conditional Logic
 
 - Boolean Logic
   - Everything is expressed as either True or False (1 or 0)
@@ -16,4 +16,4 @@
 
 ---
 
-### Loops
+## Loops
