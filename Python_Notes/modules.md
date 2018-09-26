@@ -41,4 +41,14 @@
     # Notice that random.choice() is now just choice()
     ```
 
-  
+- External Modules:  Modules stored in external systems (e.g. online).
+  - **pip**:  Python's package management system.
+    - Used to download external modules.
+    - Command line:  python -m pip install NAME_OF_PACKAGE
+
+### Useful Packages/Modules
+
+- **autopep8**
+  - A tool that automatically formats Python code to conform to the PEP 8 style guide.
+
+- 
