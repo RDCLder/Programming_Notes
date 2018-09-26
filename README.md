@@ -12,7 +12,9 @@
   - [Built-In Functions](./Python_Notes/builtin_functions.md)
   - [Modules](./Python_Notes/modules.md)
 - [Error Handling and Debugging](./Python_Notes/errors.md)
-- [Objected-Oriented Programming](./Python_Notes/oop.md)
+- Objected-Oriented Programming
+  - [OOP Part I](./Python_Notes/oop1.md)
+  - [OOP Part II](./Python_Notes/oop2.md)
 - [Databases](./Python_Notes/database.md)
 - [Web Scrapping](./Python_Notes/webscrap.md)
 - [Miscellaneous](./Python_Notes/misc.md)
