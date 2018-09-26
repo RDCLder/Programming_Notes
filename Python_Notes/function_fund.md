@@ -1,6 +1,6 @@
 # Function Fundamentals
 
-### General
+## General
 
 - Definition:  A process for executing a task
     - Accepts an input and returns an output
@@ -94,7 +94,7 @@
 
 ---
 
-### Star Operators
+## Star Operators
 
 - **Star Arguments (*args)**
   - Definition:  A special operator used to pass functions by gathering all proceeding arguments as a tuple.
