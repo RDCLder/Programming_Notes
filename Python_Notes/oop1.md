@@ -1,4 +1,4 @@
-# Object Oriented Programming Part I
+# Object Oriented Programming I
 
 ## Objectives
 
