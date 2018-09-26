@@ -1,6 +1,6 @@
 # Tuples and Sets
 
-### Tuples
+## Tuples
 
 - General
   - Definition:  An immutable, ordered collection or grouping of items.
@@ -31,7 +31,7 @@
 
 ---
 
-### Sets
+## Sets
 
 - General
   - Defintiion:  An unordered collection of data without duplicate values
