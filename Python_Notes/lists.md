@@ -1,6 +1,6 @@
 # Lists
 
-### General
+## General
 
 - List Basics
   - Defintion:  An arrayed data structure that can store elements
@@ -22,7 +22,7 @@
 
 ---
 
-### List Manipulations
+## List Manipulations
 
 - **Slicing**:  Making a new list from "slices" of existing lists
   - Syntax:  list[start:stop:step]
@@ -86,7 +86,7 @@
   
 ---
 
-### List Methods
+## List Methods
 
 - List Addition
   - **.append()** is a method that adds a single enclosed element to the preceding element
