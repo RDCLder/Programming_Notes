@@ -20,7 +20,7 @@
   - Python has built-in modules and allows for the creation of custom modules.
 
 - Importing Modules
-  - Modules must be imported to be used.
+  - Modules must be imported either as the entire module or as part of the module to be used.
     - Modules and parts of modules that are imported can be renamed
     - e.g. import random as rand
   - Importing an entire module 
@@ -40,4 +40,5 @@
     outcome = choice([1, 2, 3, 4, 5])
     # Notice that random.choice() is now just choice()
     ```
- 
+
+  
