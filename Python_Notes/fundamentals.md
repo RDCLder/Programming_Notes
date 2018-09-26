@@ -1,6 +1,6 @@
 # Fundamentals
 
-### PowerShell Fundamentals
+## PowerShell Fundamentals
 
 -	The PowerShell is the command prompt for windows OS
   - An OS is structured like a tree in which a root directory can then branch off into subdirectories (e.g. folders, files, etc.)
@@ -29,7 +29,7 @@
 
 ---
 
-### Numbers and Operators
+## Numbers and Operators
 
 - Numbers can be represented by different data types
   - **Integers** are real, whole numbers
@@ -52,7 +52,7 @@
 
 ---
 
-### Strings and Variables
+## Strings and Variables
 
 - Strings are a data type that can consist of any characters enclosed by ' or "
   - A backslash (\) will cause the interpreter to interpret the proceeding character as a part of the string
@@ -95,7 +95,7 @@
 
 ---
 
-### Relevant Functions and Tips
+## Relevant Functions and Tips
 
 - **str** will convert the enclosed elements into a printable string if applicable
   - Numbers can be converted to strings
