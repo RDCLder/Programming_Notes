@@ -1,6 +1,6 @@
 # Errors
 
-### Objectives
+## Objectives
 
 - Understand common errors and how they occur in Python
 - Use pdb to set breakpoints and step through code
@@ -8,7 +8,7 @@
 
 ---
 
-### Common Errors
+## Common Errors
 
 - **SyntaxError**:  An error which occurs when incorrect syntax is encountered.
 
@@ -71,7 +71,7 @@
 
 ---
 
-### Error Handling & Debugging
+## Error Handling & Debugging
 
 - In Python, it is strongly encouraged to use **try/except** blocks to catch potential exceptions if possible.
   - **try** is a command that will attempt to run the nested statement.
