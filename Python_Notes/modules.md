@@ -1,6 +1,6 @@
 # Modules
 
-### Objectives
+## Objectives
 
 - Define a module
 - Import code from built-in modules
@@ -10,7 +10,9 @@
 - Describe the request/response cycle in HTTP
 - Use the requests module to make requests to web apps
 
-### General
+---
+
+## General
 
 - Basics
   - Definition:  A module is a file that contains code.
@@ -46,7 +48,9 @@
     - Used to download external modules.
     - Command line:  python -m pip install NAME_OF_PACKAGE
 
-### Useful Packages/Modules
+---
+
+## Useful Packages/Modules
 
 - **autopep8**
   - A tool that automatically formats Python code to conform to the PEP 8 style guide.
