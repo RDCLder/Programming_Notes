@@ -1,6 +1,6 @@
 # Dictionaries
 
-### General
+## General
 
 - Dictionary Basics
   - Definition:  A data structure which consists of key-value pairs.
@@ -67,7 +67,7 @@
 
 ---
 
-### Dictionary Methods
+## Dictionary Methods
 
 - **.clear()** is a method that deletes all the contents of the preceding dictionary
 
@@ -115,7 +115,7 @@
 
 ---
 
-### Dictionary Comprehension
+## Dictionary Comprehension
 
 - Dictionary comprehension is a way to generate dictionaries with specified parameters
   - Syntax:  {_:_for_in_}
