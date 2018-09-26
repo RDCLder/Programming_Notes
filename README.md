@@ -1,6 +1,6 @@
 # Programming Notes
 
-### Python
+## Python
 - [Fundamentals](./Python_Notes/fundamentals.md)
 - [Flow Control](./Python_Notes/flowcontrol.md)
 - Data Structures
