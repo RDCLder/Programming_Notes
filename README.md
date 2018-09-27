@@ -16,7 +16,8 @@
   - [OOP Part I](./Python_Notes/oop1.md)
   - [OOP Part II](./Python_Notes/oop2.md)
 - [Databases](./Python_Notes/database.md)
-- [Web Scrapping](./Python_Notes/webscrap.md)
+- Web Scrapping
+  - [HTTP Requests](./Python_Notes/http.md)
 - [Miscellaneous](./Python_Notes/misc.md)
 
 ---
