@@ -28,14 +28,14 @@
     - The server responds with a status code
       - 2xx:  Success
       - 3xx:  Redirect
-      - 4**:  Client Error (your fault)
-      - 5**:  Server Error
+      - 4xx:  Client Error (your fault)
+      - 5xx:  Server Error
     - Status codes are followed by an action
       - HTML code to render the website
       - Code to render an error page
   - Request Headers
     - Contains additional information about a request/response
-    - **Accept**:  Acceptable content-types for response (e.g. html,json, xml)
+    - **Accept**:  Acceptable content-types for response (e.g. html, json, xml)
     - **Cache-Control**:  Specify caching behavior
     - **User-Agent**:  Information about the software used to make the request
   - Response Headers
