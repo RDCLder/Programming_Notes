@@ -51,7 +51,26 @@
   - Definition:  Application programming interface.  A set of clearly defined methods of communication among various components of computers.
     - Allows flow of information between applications without needing to understand how each application works.
 
-## Useful Modules
+## Requests Module
 
 - **requests**:  A module that allows Python to access the request/response cycle of internet servers.
+  - Uses
+    - Make HTTP requests with Python
+    - Web scrapping/crawling, grabbing data from other APIs, etc.
+
+- Request Headers
+  - A request for receiving output in a specific way.
+    - e.g. Outputting in JSON instead of HTML
+  - e.g.
+  ```python
+  import requests
+  
+  response = requests.get(
+    "http://www.example.com",
+    headers = {
+      "headers": "value1",
+      "headers": "value2"
+    }
+  )
+  ```
 
