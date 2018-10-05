@@ -60,7 +60,11 @@
 
 - Request Headers
   - A request for receiving output in a specific way.
-    - e.g. Outputting in JSON instead of HTML
+    - e.g. Outputting in plain textor JSON instead of HTML
+  - Syntax:  requests.get(URL, headers = {}, ) 
+    - First argument is URL
+    - Second optional argument is header which specifies requirements for the output
+    - Headers is a dictionary.  Every key-value pair corresponds to a requirement and format required.
   - e.g.
   ```python
   import requests
@@ -68,9 +72,22 @@
   response = requests.get(
     "http://www.example.com",
     headers = {
-      "headers": "value1",
+      "Accept": "text/plain",
       "headers": "value2"
     }
   )
+  ```
+
+- Header Types
+  - Accept:  Specifies the format to receive responses in
+    - plain/text
+    - application/json
+
+- **.json()**:  A method that changes any output request in json format from a string to dictionary
+  - More organized and easier to utilize than plain text.
+  - e.g.
+  ```python
+  response = requests.get(url, headers = {'Accept': 'application/json'}
+  data = response.json()
   ```
 
