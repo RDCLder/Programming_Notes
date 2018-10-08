@@ -79,15 +79,47 @@
   ```
 
 - Header Types
-  - Accept:  Specifies the format to receive responses in
+  - Accept:  Specifies the format to receive responses in.
     - plain/text
     - application/json
 
-- **.json()**:  A method that changes any output request in json format from a string to dictionary
+- **.json()**:  A method that changes any output response in json format from a string to a dictionary
   - More organized and easier to utilize than plain text.
+    - Most modern APIs are compatible with json.
   - e.g.
   ```python
   response = requests.get(url, headers = {'Accept': 'application/json'}
   data = response.json()
   ```
 
+- Sending Requests with Params
+  - **Query String**
+    - Definition:  A way to pass data to the server as part of a GET request.
+    - Query strings are part of the URL and usually follow a question mark.
+    - e.g. google.com/search?q=something
+  - Query strings can be passed directly in the URL or use the **params** function
+  - **params**:  A function which stores requests for the query string as a dictionary
+    - Websites generally have APIs which document how requests should be made
+  - e.g.
+  ```python
+  # Option 1
+  
+  import requests
+  
+  response = requests.get(
+    "http://www.example.com?key1=value1&key2=value2" # All key-value pairs are separated by &.
+  )
+  
+  # Option 2 (preferred)
+  
+  import requests
+  
+  response = requests.get(
+    "http://example.com",
+    params = {
+      "key1": "value1",
+      "key2": "value2"
+    }
+  )
+  
+  ```
