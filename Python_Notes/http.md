@@ -73,7 +73,7 @@
   
   response = requests.get(
     "http://www.example.com",
-    headers = {
+    headers={
       "Accept": "text/plain",
       "headers": "value2"
     }
@@ -118,7 +118,7 @@
   
   response = requests.get(
     "http://example.com",
-    params = {
+    params={
       "key1": "value1",
       "key2": "value2"
     }
