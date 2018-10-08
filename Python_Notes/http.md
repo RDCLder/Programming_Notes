@@ -51,6 +51,8 @@
   - Definition:  Application programming interface.  A set of clearly defined methods of communication among various components of computers.
     - Allows flow of information between applications without needing to understand how each application works.
 
+---
+
 ## Requests Module
 
 - **requests**:  A module that allows Python to access the request/response cycle of internet servers.
