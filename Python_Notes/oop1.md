@@ -20,6 +20,63 @@
   - Uses
     - OOP is an approach for *encapsulating* code into logical, hierarchical groupings using classes.
     - Allows for using logic at higher levels.
-    
+
+- **Encapsulation**
+  - Definition:  The grouping of public and private attributes and methods into a programmatic class.
+    - Doing so makes **abstraction** possible.
+  - There is no true distinction between public and private informaton.  It is up to the developer.
+    - The convention for private information is to lead an attribute or method name with an underscore.
+    - e.g.  _cardsLeft is private a list attribute because the name leads with an underscore.
+  - e.g.  Modeling a game of poker
+    - Entities that could be modeled as object classes:
+      - Game
+      - Player
+      - Card
+      - Deck
+      - Hand
+      - Chip
+      - Bet
+    - For the deck class, cards can be made as a private attribute
+    - The length of the cards can be accessed by a public method called count()
+
 - **Abstraction**
-  - Definition:  
+  - Definition:  An approach to design which emphasizes on only revealing the relevant data in a class interface and hiding private information from users.
+  
+## Creating Classes and Instances
+
+- **__init__()**:  A method that defines the initial attributes of a class and how they store data.
+  - Syntax:  __init__(self, parameter1, ... parameterN)
+    - The self parameter refers only to the current instance of the class.
+    - The *self* parameter is never input as an argument by the user.  The first argument is parameter1.
+    - Each parameter is an input for an attribute for the class.  Attributes and parameters are like key-value pairs.
+  - Use
+    - When a new classis created, this must be the first method to be defined.
+    - When a new instance of a class is created, the **__init__()** method is automatically called.
+    - This method is necessary to store data for a class.  For a class that only stores methods and does not store data, this method is unnecessary (rare).
+  - e.g.
+  ```python
+  class User:
+    def __init__(self, first, last = 'Solo'):
+      self.firstName = first
+      self.lastName = last
+      self.age = age
+  
+  # The attribute firstName corresponds to the parameter *first* and so on.
+  
+  user1 = User('Han')
+  print(user1.first) # This prints 'Han'
+  print(user1.last) # This prints 'Solo' as the default argument
+  ```
+
+- Underscores
+  - Dunder Method:  A method that overrides an inherent method.
+    - Syntax:  __method__()
+  - Single underscores are used to designate to the developer that a specific attribute/method is private.
+    - There is no technical difference between names that start with a letter or a single underscore.
+  - Double underscores in front of a name are used 
+  - Name Mangling:  
+  - More
+  
+- Conventions
+  - New class names start with an uppercase letter.
+  - The first parameter for the **__init__()** method is usually named *self*.
