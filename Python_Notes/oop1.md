@@ -68,13 +68,29 @@
   print(user1.last) # This prints 'Solo' as the default argument
   ```
 
+- Instance Methods
+  - 
+
 - Underscores
-  - Dunder Method:  A method that overrides an inherent method.
-    - Syntax:  __method__()
   - Single underscores are used to designate to the developer that a specific attribute/method is private.
+  - **Dunder Method** (double underscores):  A method that overrides an inherent method.
+    - Syntax:  __method__()
     - There is no technical difference between names that start with a letter or a single underscore.
-  - Double underscores in front of a name are used 
-  - Name Mangling:  
+  - **Name Mangling** (double underscore in front):  An automatic procedure in which a name leading with a double underscore is preceded by the encapsulating class.
+    - Syntax:  __method -> _class__method()
+    - This allows a name for an attribute or a method to be tied to the specific class if the name is also used in other classes.
+    - e.g.
+    ```python
+    def class1(input):
+      __method = action(input)
+      
+    def class2(class1):
+      __method = action(input)
+      
+    # Class2 is dependent on class1 and __method is used for both definitions
+    # Python automatically prefaces each method name with its respective class to avoid confusion
+    # The method becomes _class1__method() and _class2__method()
+    ```
   - More
   
 - Conventions
