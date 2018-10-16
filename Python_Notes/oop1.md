@@ -41,8 +41,14 @@
 
 - **Abstraction**
   - Definition:  An approach to design which emphasizes on only revealing the relevant data in a class interface and hiding private information from users.
-  
+
+---
+
 ## Creating Classes and Instances
+
+- Conventions
+  - New class names start with an uppercase letter.
+  - The first parameter for the **__init__()** method is usually named *self*.
 
 - **__init__()**:  A method that defines the initial attributes of a class and how they store data.
   - Syntax:  __init__(self, parameter1, ... parameterN)
@@ -69,7 +75,47 @@
   ```
 
 - Instance Methods
-  - 
+  - Definition:  Methods that affect a single instance of a class.
+  - e.g.
+  ```python
+  class User:
+    def __init__(self, first, last, age):
+        self.first = first
+        self.last = last
+        self.age = age
+
+    def full_name(self):
+        return f'{self.first} {self.last}'
+
+    def initials(self):
+        return f'{self.first[0]}    {self.last[0]}'
+  
+  user1 = User('Joe', 'Smith', 68)
+  print(user1.full_name()) # Returns 'Joe' 'Smith'
+  print(user1.initials()) # Returns 'JS'
+  ```
+
+- Class Attributes
+  - Definition:  An attribute that is shared by all instances of a class.
+    - Must be scoped directly under the class definition (i.e. outside specific methods).
+  - Defining an attribute as part of the class allows for easier manipulation if it's used by multiple methods.
+    - Changing a class attribute for a specific instance will create a new attribute for that instance and not affect the class attribute.
+  - e.g.
+  ```python
+  class User:
+
+    active_users = 0
+
+    def __init__(self, first, last, age):
+        self.first = first
+        self.last = last
+        self.age = age
+        User.active_users += 1
+  
+  # Every time a new instance of User is created, active_users is increased by 1.
+  ```
+
+- Class Methods
 
 - Underscores
   - Single underscores are used to designate to the developer that a specific attribute/method is private.
@@ -91,8 +137,3 @@
     # Python automatically prefaces each method name with its respective class to avoid confusion
     # The method becomes _class1__method() and _class2__method()
     ```
-  - More
-  
-- Conventions
-  - New class names start with an uppercase letter.
-  - The first parameter for the **__init__()** method is usually named *self*.
