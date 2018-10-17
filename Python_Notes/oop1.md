@@ -168,7 +168,10 @@
 
 - String Representation
   - Definition:  A dunder that allows for the representation of an instance as a string.
-  - Syntax:  __repr__(self)
+  - Syntax:  
+  ```python
+  __repr__(self)
+  ```
   - e.g.
   ```python
   def __repr__(self):
