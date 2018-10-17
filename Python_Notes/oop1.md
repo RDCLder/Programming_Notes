@@ -48,7 +48,9 @@
 
 - Conventions
   - New class names start with an uppercase letter.
-  - The first parameter for the **__init__()** method is usually named *self*.
+  - The first parameter for the **__init__()** method is named *self*.
+  - Class attributes are defined near the beginning, before the **__init__()** method.
+  - Class methods do not have a convention.  The first parameter is named *cls*  Just be consistent.
 
 - **__init__()**:  A method that defines the initial attributes of a class and how they store data.
   - Syntax:  __init__(self, parameter1, ... parameterN)
@@ -116,6 +118,32 @@
   ```
 
 - Class Methods
+  - Definition:  A method that only affects the class and not instances.
+  - Syntax:
+  ```python
+  class NewClass():
+    #...
+    
+    @classmethod
+    def newMethod(cls, *params):
+      returm cls(*params)
+  ```
+    - @classmethod must always be directly above a class method definition.
+    - Instead of referring to self, class methods refer to cls
+  - e.g.
+  ```python
+  @classmethod
+    def from_string(cls, str):
+        first, last, age = str.split(',')
+        return cls(first, last, int(age))
+  
+  tom = User.from_string('Tom,Jones,89')
+  print(tom.full_name()) # 'Tom Jones'
+  ```
+
+---
+
+## Miscellaneous
 
 - Underscores
   - Single underscores are used to designate to the developer that a specific attribute/method is private.
@@ -137,3 +165,12 @@
     # Python automatically prefaces each method name with its respective class to avoid confusion
     # The method becomes _class1__method() and _class2__method()
     ```
+
+- String Representation
+  - Definition:  A dunder that allows for the representation of an instance as a string.
+  - Syntax:  __repr__(self)
+  - e.g.
+  ```python
+  def __repr__(self):
+    return f'{self.first} is {self.age}.'
+  ```
