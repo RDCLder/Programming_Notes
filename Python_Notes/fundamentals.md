@@ -1,6 +1,6 @@
 # Fundamentals
 
-## PowerShell Fundamentals
+## Command Line/PowerShell Fundamentals
 
 -	The PowerShell is the command prompt for windows OS
   - An OS is structured like a tree in which a root directory can then branch off into subdirectories (e.g. folders, files, etc.)
