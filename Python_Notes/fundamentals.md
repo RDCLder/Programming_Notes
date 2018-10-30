@@ -2,14 +2,21 @@
 
 ## Command Line/PowerShell Fundamentals
 
--	The PowerShell is the command prompt for windows OS
+-	The PowerShell is the command line equivalent for windows OS
   - An OS is structured like a tree in which a root directory can then branch off into subdirectories (e.g. folders, files, etc.)
     - Root directory is C:
     - Levels of the hierarchy are separated by \
     - Home directory is designated by ~ and is usually C:\Users\Username
 
-  - The command prompt has greater functionality than a GUI like Windows Explorer
-    - e.g.  Instead of manually dragging a file from directory to directory, PowerShell can perform that function with a line of code
+  - The command line has greater functionality than a GUI like Windows Explorer or Mac Finder
+    - There are special keywords that can perform the same functions as a GUI and much more.
+    - e.g.  Instead of manually dragging a file from directory to directory, PowerShell can perform that function with a line of code.
+  
+  - Command Line Uses
+    - Navigate around directories
+    - Create and remove directories and files
+    - Move, copy, and paste things
+    - Execute scripts
 
 -	PowerShell has several basic functions that can be used to manipulate files
   - Basic directory functions
