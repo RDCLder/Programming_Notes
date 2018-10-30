@@ -1,7 +1,9 @@
 # Programming Notes
 
 ## Python
-- [Fundamentals](./Python_Notes/fundamentals.md)
+- Fundamentals
+  - [Command Line](./Python_Notes/commandline.md)
+  - [Programming Basics](./Python_Notes/basics.md)
 - [Flow Control](./Python_Notes/flowcontrol.md)
 - Data Structures
   - [Lists](./Python_Notes/lists.md)
