@@ -1,6 +1,6 @@
 # The Command Line
 
-## Mac Terminal
+## Navigation and Creation
 
 - Command Line Uses
   - Navigate around directories
@@ -46,6 +46,10 @@
   - **mkdir**:  "Make Directory".  Takes a directory name as an argument and creates it in the working directory.
   - **touch**:  Takes a file name as an argument creates that file in the working directory.
 
+---
+
+## Manipulation
+
 - Copy and Pasting
   - **cp**:  Copies specified file(s).
   - Syntax:  ```cp file``` or ```cp directory/file newdirectory/```
@@ -59,9 +63,57 @@
     - ```m*.txt``` specifies all files starting with a m and ending with .txt.
 
 - Moving
-  - **mv**:  Moves specified file(s).
+  - **mv**:  Moves specified file/directory.
   - Syntax:  ```mv file newdirectory/```
+
+- Removing
+  - **rm**:  Removes specified file/directory.
+  - Syntax:  ```rm file```
+  - Options:
+    - ```-r``` stands for "recursive" and is used to delete a directory and all its contents.
+  - There is no "un-delete" command so all removals are permanent.
 
 ---
 
-# Windows PowerShell
+## Redirection
+
+- General
+  - Definition:  Redirection is the act of directing I/O of a command between different files and programs and chaining them together in a pipeline.
+  - Syntax:  ```input [symbol] output location```
+    - ```>``` redirects output of a preceding command to a proceeding file, overwriting previous content.
+    - ```>>``` redirects output of a preceding command to a proceeding file, appending to previous content.
+    - ```<``` redirects proceeding input to a preceding command.
+    - ```|``` redirects standard output of a preceding command as the input to the proceeding command.
+    
+  - I/O Definitions
+    - Standard Input:  ```stdin``` information input into the terminal through the keyboard or input device.
+    - Standard Output:  ```stdout``` information output after a process is executed.
+    - Standard Error:  ```stderr``` error message output after a process fails.
+  
+- Commands
+  - **echo**:  Accepts a standard input and returns it to the terminal as a standard output.
+    - Syntax:  ```echo 'string'```
+    - e.g. ```echo "Hello world!"```
+  - **cat**:  Outputs content of a file to the terminal.
+    - Syntax:  ```cat file > location```
+      - Default location is terminal if not specified.
+    - e.g. ```cat oceans.txt > continents.txt```
+      - This would replace the content of continents.txt with that of oceans.txt.
+  - **wc**:  "Word Count".  Counts the words in a file.
+  - **sort**:  Takes a input and returns it sorted alphabetically as the output.
+  - **uniq**:  Takes a input and returns the number of unique, adjacent instances as the output.
+    - If repeated instances are not directly adjacent, they will remain.  Sort command is commonly used to address this.
+  - **grep**:  "Global Regular Expression Point".  Searches files for lines that match an input pattern and returns them.
+    - Syntax:  ```grep 'string' file/location```
+    - Case sensitive.  ```-i``` renders the command case insensitive.
+    - ```-R``` limits the search to a specified directory.
+    - ```-l``` limits the search to only files.
+  - **sed**:  "Stream Editor".  Accepts an input and modifies it based on an expression before returning an output.
+    - Syntax:  ```sed 'front_expression/search_string/replacement_string/back_expression' location```
+      - The expression denotes what to do.  See expressions.
+      - The search_string is the string being searched and replaced with the replacement_string.
+    - Expressions
+      - ```s``` front expression.  Substitutes all instances of a specified string with a replacement string.
+      - ```g``` back expression.  Designates a global search.
+    - e.g.  ```sed 's/snow/rain/g'
+      - This searches for all instances of ```snow``` and replaces them with ```rain```
