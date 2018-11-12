@@ -71,9 +71,12 @@
 
 - Removing
   - **rm**:  Removes specified file/directory.
+  - **rmdir**:  Removes a specified directory.
   - Syntax:  ```rm file```
   - Options:
     - ```-r``` stands for "recursive" and is used to delete a directory and all its contents.
+    - ```-f``` stands for "force" and is used to force a deletion and ignore exceptions.
+    - Combining both into ```-rf``` is analogous to using the **rmdir** command.
   - There is no "un-delete" command so all removals are permanent.
 
 ---
