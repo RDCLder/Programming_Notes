@@ -45,6 +45,9 @@
       - e.g.  ```cd ../RDCLder/Documents``` will take you from **username** to **Users** and then to the specified path.
   - **mkdir**:  "Make Directory".  Takes a directory name as an argument and creates it in the working directory.
   - **touch**:  Takes a file name as an argument creates that file in the working directory.
+  - **less**:  Interactively shows contents of a file.
+  - **man**:  View manual.
+  - **history**:  Lists the history of previous commands.  
 
 ---
 
