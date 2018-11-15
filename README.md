@@ -20,6 +20,8 @@
 - [Databases](./Python_Notes/database.md)
 - Web Scrapping
   - [HTTP Requests](./Python_Notes/http.md)
+- Libraries
+  - [matplotlib](./Python_Notes/matplotlib.md)
 - [Miscellaneous](./Python_Notes/misc.md)
 
 ---
