@@ -5,7 +5,7 @@
 - Dictionary Basics
   - Definition:  A data structure which consists of key-value pairs.
     - Keys are used to describe data while values are used to represent the data
-    - Keys are usually numbers and strings while values can be any element (e.g. numbers, strings, lists, dictionaries, etc.)
+    - Keys must be immutable items (e.g. strings, numbers, tuples, etc.) while values can be any element (e.g. numbers, strings, lists, dictionaries, etc.)
   - Syntax:  {key1: value1, key2: value2, key3: value3}
   - e.g.
   ```python
@@ -110,8 +110,20 @@
   d.popitem() # This will remove a random item and reutrn it (e.g. a = 1)
   ```
 
-- **.update()** is a method that updates keys and values in a dictionary with another set of key-value pairs.
-  - Only useful for appending dictionaries
+- **.update()** is a method that updates keys and values in a dictionary with those from another dictionary.
+  - Syntax:  ```dictionary1.update(dictionary)```
+    - The item to append must be a dictionary.
+  - e.g.
+  ```python
+  wordFreqDic = {
+    "Hello": 56,
+    "at" : 23 ,
+    "test" : 43,
+    "this" : 43
+    }
+  
+  wordFreqDic.update( {'before' : 23} )
+  ```
 
 ---
 
