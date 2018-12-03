@@ -1,6 +1,7 @@
 # Programming Notes
 
 ## Python
+
 - Fundamentals
   - [Command Line](./Python_Notes/commandline.md)
   - [Programming Basics](./Python_Notes/basics.md)
@@ -26,7 +27,10 @@
 
 ---
 
-## R
+## Data Structures & Algorithms
+
+- Algorithms
+  - [Introduction](./DSA/introduction.md)
 
 ---
 
