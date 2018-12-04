@@ -104,18 +104,47 @@
   - Merge Sort
     - We divide the array into two halves and sort each half first.
     - We then combine the two sorted halves in some way.
-    - Pseudocode:
+    - Python function:
     ```python
-    def merge_sort(arr):
+    def mergeSort(arr):
     
-      base = # insert min required elements here
+      minimum = 4
+      n = len(arr)
 
-      if len(arr) < base or len(arr) % 2 != 0:
-        return arr # ignore base cases
+      if n < minimum:
+          return arr
       else:
-        subArr1 = sorted([arr[i] for i in range(len(arr) // 2)])
-        subArr2 = sorted([arr[j] for j in range(len(arr) // 2, len(arr))])
+          subArr1 = sorted([arr[i] for i in range(n // 2)])
+          subArr2 = sorted([arr[j] for j in range(n // 2, n)])
+          finalArr = []
+          i = 0
+          j = 0
 
-      # TBC
+          for k in range(n):
+              if i == n // 2: # Comment 1
+                  finalArr.append(subArr2[n // 2 - 1])
+              elif j == n // 2:
+                  finalArr.append(subArr1[n // 2 - 1])
+              else: # Comment 2
+                  if subArr1[i] < subArr2[j]:
+                      finalArr.append(subArr1[i])
+                      i += 1
+                  elif subArr1[i] > subArr2[j]:
+                      finalArr.append(subArr2[j])
+                      j += 1
+
+          return finalArr
     ```
+      - Comment 1
+        - We must account for end cases when ```subArr[n // 2]``` is out of index.
+        - This is the case for the final iteration of k.
+        - We simply append the remaining number (which will be in the other subArray).
+      
+      - Comment 2
+        - If neither end case is met, the loop continues iterating to check which subArray has a smaller number to append to the final array.
+        - Each time a number is appended, its respective sub array's index is incremented by one to represent moving on to the next biggest number in that array.
+  - Proof that merge sort is faster
+    - Computation speed (runtime) is a direct consequence of how many step-by-step operations need to be performed to execute all the code.
+    - Merge sort has less than or equal ```4n + 2``` operations for an array of n elements.  Merge sort is therefore ```constant * log2(n) + constant * n.
+    - Traditional sorting algorithms (insertion, selection, bubble) are all quadratic whichh will be larger.
     
