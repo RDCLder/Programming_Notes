@@ -65,6 +65,8 @@
     - These are often inefficient and time-consuming.
     - There is usually at least one better method.
 
+---
+
 ## Merge Sort
 
 - Integer Multiplication
