@@ -31,6 +31,7 @@
 
 - Algorithms
   - [Introduction](./DSA/introduction.md)
+  - [Sorting](./DSA/sorting.md)
 
 ---
 
