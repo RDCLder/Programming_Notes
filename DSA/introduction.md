@@ -64,3 +64,15 @@
   - There is usually a simple, "naive" brute-force approach that tests every single possibility
     - These are often inefficient and time-consuming.
     - There is usually at least one better method.
+
+- Guiding Principles
+  - Principle 1: Use the worst-case analysis.
+    - Accounts for the worst possible runtime without making any assumptions, making it useful for general purpose.
+    - Preferred over alternatives like average-case analysis (assume specific frequencies) and pre-specified benchmarks which depend more on specific need and domain knowledge.
+  - Principle 2: Constant factors and lower-order terms are considered trivial.
+    - At this level of abstraction, it is unnecessary to worry about them as their contribution is insignificant.  We still maintain highly accurate predictive power.
+    - Constants depend on architecture and compiler/programmer which vary by language.
+  - Principle 3: Use asymptotic analysis for runtimes with large input sizes.
+    - Only problems with large input sizes require algorithms to optimize.  Small problems (e.g. n <= 100) are almost instantaneous.
+  - A fast algorithm is one in which the worst-case running time grows slowly with input size.
+    - The "holy grail" is linear running-time in which the number of operations grows directly proportional to the input size.
