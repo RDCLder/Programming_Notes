@@ -147,12 +147,18 @@
         - If neither end case is met, the loop continues iterating to check which subArray has a smaller number to append to the final array.
         - Each time a number is appended, its respective sub array's index is incremented by one to represent moving on to the next biggest number in that array.
   
-- Proof that merge sort is faster
-  - Computation speed (runtime) is a direct consequence of how many step-by-step operations need to be performed to execute all the code.
+- Running time analysis
+  - Computation speed (runtime) is a direct consequence of how many operations need to be performed to execute all the code.
   - Merge sort has less than or equal ```4n + 2``` operations for an array of n elements.
     - Merge sort is therefore ```constant * log2(n) + constant * n.```
     - Assuming n is greater than or equal to 1, we can "generalize" this into ```6n * logN + 6n``` operations.
-  - Traditional sorting algorithms (insertion, selection, bubble) are all quadratic whichh will be larger.
+  - Traditional sorting algorithms (insertion, selection, bubble) are all quadratic which require many times more operations than logarithmic algorithms.
   - Recursion Tree Model
-    - Root: 
-    
+    - Root:  Entire input.
+    - Level 1:  Left, right.
+    - Level 2:  Left1, Left2, Right1, Right2.
+    - etc.
+  - The levels of a recursion tree is a function ```log2(n)``` of the input array.
+  - At most, the total amount of work (required operations) can be expressed as ```6n(log2(n) + 1).
+    - ```6n``` corresponds to the amount of work per level.
+    - ```log2(n) + 1``` corresponds to the amount of levels.
