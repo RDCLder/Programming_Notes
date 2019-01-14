@@ -36,19 +36,23 @@
 ### Common Statements
   
 - **Create Database**
-  - ```CREATE DATABASE dbName;```
-  - e.g.
+  - Syntax
+    ```sql
+    CREATE DATABASE dbName;
     ```
+  - e.g.
+    ```sql
     CREATE DATABASE novClass;
     ```
 - **Create Table**
-  - ```
+  - Syntax
+    ```sql
     CREATE TABLE tableName (
       columnNames data types  
     );
     ```
   - e.g.
-    ```
+    ```sql
     CREATE TABLE student (
       id SERIAL NOT NULL PRIMARY KEY,
       name VARCHAR,
@@ -61,60 +65,72 @@
 - **Insert**
   - Syntax
     - Full values
-      ```INSERT INTO tableName values (value1, value2, etc. valueN)```
+      ```sql
+      INSERT INTO tableName values (value1, value2, etc. valueN)
+      ```
     - Partial values
-      ```INSERT INTO tableName (keys) values (corresponding values)```
+      ```sql
+      INSERT INTO tableName (keys) values (corresponding values)
+      ```
   - e.g.
     - Full values
-      ```
+      ```sql
       INSERT INTO student VALUES (
         DEFAULT, 'Paul', 'pizzapanther', 6, '2017-04-17', FALSE
       );
       ```
     - Partial values
-      ```
+      ```sql
       INSERT INTO student (name, github) VALUES (
         'Paul', 'pizzapanther'
       );
       ```
 
 - **Update**
-  - ```UPDATE tableName SET attribute = value WHERE attribute = value```
+  - Syntax
+    ```sql
+    UPDATE tableName SET attribute = value WHERE attribute = value
+    ```
     - The first attribute is being changed while the second attribute after WHERE selects which columns by a specified attribute.
     - If no criteria is set, all entries with the attribute will be selected.
     - Multiple attributes can be selected.
   - e.g.
-    ```
+    ```sql
     -- Select student with id = 1
     UPDATE student SET points = 8 WHERE id = 1;
     ```
-    ```
+    ```sql
     -- Select all students
     UPDATE student SET points = 8;
     ```
-    ```
+    ```sql
     -- Multiple attribute updates
     UPDATE student SET points = 8, graduated = TRUE WHERE id = 1;
     ```
 
 - **Delete**
-  - ```DELETE FROM table where attribute = value```
-  - e.g.
+  - Syntax
+    ```sql
+    DELETE FROM table where attribute = value
     ```
+  - e.g.
+    ```sql
     -- Delete student with matching id
     DELETE FROM student where id = 1
     ```
-    ```
+    ```sql
     -- Delete all entries from student table
     DELETE FROM student;
     ```
 
 - **Select**
-  - ```SELECT attribute FROM table;```
+  - ```sql
+    SELECT attribute FROM table;
+    ```
     - Multiple attributes can be selected
     - * selects all attributes
   - e.g.
-    ```
+    ```sql
     -- Select multiple attributes
     SELECT name, website FROM student;
     
@@ -129,42 +145,52 @@
     - The attribute after WHERE sets the criteria
     - Multiple attributes can be set for the criteria
   - e.g.
-    ```
+    ```sql
     SELECT name FROM student where gender = 'F';
     
     SELECT * from student WHERE points > 7;
-    
+    ```
+    ```sql
     -- and operator
     SELECT name FROM student WHERE gender = 'F' and points > 7;
-    
+    ```
+    ```sql
     -- like operator for substring comparison
     SELECT * FROM student WHERE gihub_username like '%thompson%;
-    
+    ```
+    ```sql
     -- ilike operator for case insensitivity
     SELECT * FROM student WHERE gihub_username ilike '%thompson%;
-    
+    ```
+    ```sql
     SELECT * FROM student WHERE website is NULL;
     ```
 
 - **ADD/DROP/MODIFY** Column
   - Add
-    ```ALTER TABLE tableName ADD columnName datatype```
+    ```sql
+    ALTER TABLE tableName ADD columnName datatype
+    ```
   - Drop
-    ```ALTER TABLE tableName DROP COLUMN columnName```
+    ```sql
+    ALTER TABLE tableName DROP COLUMN columnName
+    ```
   - Modify
-    ```MODIFY COLUMN columnName datatype```
+    ```sql
+    MODIFY COLUMN columnName datatype
+    ```
 
 ### Syntax
 
 - Default Values
   - Syntax
-    ```
+    ```sql
     CREATE TABLE student (
       attribute type default value
     );
     ```
   - e.g.
-    ```
+    ```sql
     CREATE TABLE student (
       id SERIAL NOT NULL PRIMARY KEY,
       name VARCHAR,
@@ -183,7 +209,7 @@
     - UNIQUE: Prevent rows from having the same value
     - CHECK: Number range checks and more
   - e.g.
-    ```
+    ```sql
     CREATE TABLE student (
       id SERIAL NOT NULL PRIMARY KEY,
       name varchar,
@@ -200,7 +226,7 @@
     - In reality is simply the combination of the constraints: NOT NULL and UNIQUE
   - Placed after constraints
   - e.g.
-    ```
+    ```sql
     CREATE TABLE student (
       name varchar,
       github varchar UNIQUE NOT NULL,
@@ -254,28 +280,33 @@
   
 - **COUNT**
   - e.g.
-    ```
+    ```sql
     SELECT COUNT(*) FROM student;
     ```
-    ```
+    ```sql
     -- Students with Github
     SELECT COUNT(github) FROM student;
     ```
     
 - **SUM**
   - e.g.
-    ```
+    ```sql
     SELECT SUM(points) FROM student;
     ```
+
+- Common Functions
+  - **AVG**
+  - **MAX**
+  - **MIN**
 
 - **GROUP BY**
   - Displays the specified attributes' values grouped by a specified attribute
     - The attribute must be one of the selected attributes
   - e.g.
-    ```
+    ```sql
     SELECT start_date, sum(points) FROM GROUP BY start_date;
     ```
-    ```
+    ```sql
     -- more stats!
     SELECT start_date,
       SUM(points) AS total_points,
@@ -287,11 +318,16 @@
 - **ORDER BY**
   - Orders 
   - e.g.
-    ```
+    ```sql
     SELECT * FROM student ORDER BY points;
     ```
-
-- Common Functions
-  - **AVG**
-  - **MAX**
-  - **MIN**
+    
+- **LIMIT/OFFSET**
+  - e.g.
+  ```sql
+  SELECT * FROM student ORDER BY points LIMIT 5;
+  ```
+  ```sql
+  -- offset (pagination)
+  SELECT * FROM student ORDER BY points LIMIT 5 OFFSET 5;
+  ```
