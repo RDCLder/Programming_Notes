@@ -25,14 +25,10 @@
   - [Matplotlib](./Python_Notes/matplotlib.md)
 - [Miscellaneous](./Python_Notes/misc.md)
 
----
-
 ## Data Structures & Algorithms
 
 - Algorithms
   - [Introduction](./DSA/introduction.md)
   - [Sorting](./DSA/sorting.md)
-
----
 
 ## SQL
