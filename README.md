@@ -34,4 +34,4 @@
 ## Database
 
 - SQL
-  - [PostgreSQL](./Database/postgres.md)
+  - [PostgreSQL](./Database/postgresql.md)
