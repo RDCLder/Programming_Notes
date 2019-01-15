@@ -30,7 +30,9 @@
     - Open databsase: ```psql dbName```
     - Apply SQL file to database: ```psql dbName -f file.sql```
   - Postico
-  
+
+---
+
 ## Syntax
  
 ### Common Statements
@@ -271,7 +273,9 @@
   - Read
   - Update
   - Delete
-  
+
+---
+
 ## Data Aggregation
 
 - Data aggregation is a process in which information is gathered and expressed in a summary form
