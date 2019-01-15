@@ -33,5 +33,6 @@
 
 ## Database
 
-- SQL
-  - [PostgreSQL](./Database/postgresql.md)
+- PostgreSQL
+  - [PostgreSQL](./Database/PostgreSQL/postgresql.md)
+  - [Associations](./Database/PostgreSQL/associations.md)
