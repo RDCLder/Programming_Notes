@@ -25,6 +25,9 @@
   - [Matplotlib](./Python_Notes/matplotlib.md)
 - [Miscellaneous](./Python_Notes/misc.md)
 
+## Cython
+- Coming Soon
+
 ## Data Structures & Algorithms
 
 - [Introduction](./DSA/introduction.md)
