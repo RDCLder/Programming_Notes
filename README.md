@@ -1,4 +1,4 @@
-# Programming Notes
+# Python Notes
 
 ## Python
 
@@ -25,14 +25,10 @@
   - [Matplotlib](./Python_Notes/matplotlib.md)
 - [Miscellaneous](./Python_Notes/misc.md)
 
----
-
 ## Data Structures & Algorithms
 
 - [Introduction](./DSA/introduction.md)
 - [Sorting](./DSA/sorting.md)
-
----
 
 ## Database
 
