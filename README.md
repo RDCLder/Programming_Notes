@@ -32,9 +32,3 @@
 
 - [Introduction](./DSA/introduction.md)
 - [Sorting](./DSA/sorting.md)
-
-## Database
-
-- PostgreSQL
-  - [PostgreSQL](./Database/PostgreSQL/postgresql.md)
-  - [Associations](./Database/PostgreSQL/associations.md)
