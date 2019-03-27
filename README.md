@@ -27,5 +27,3 @@
 
 ## Cython
 - Coming Soon
-
-## Data Structures & Algorithms
