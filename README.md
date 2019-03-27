@@ -29,6 +29,3 @@
 - Coming Soon
 
 ## Data Structures & Algorithms
-
-- [Introduction](./DSA/introduction.md)
-- [Sorting](./DSA/sorting.md)
